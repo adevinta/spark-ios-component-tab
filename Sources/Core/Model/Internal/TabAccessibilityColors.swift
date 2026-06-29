@@ -13,7 +13,7 @@ struct TabAccessibilityColors: Equatable {
 
     // MARK: - Properties
 
-    var selectedTintcolorToken: any ColorToken = ColorTokenClear()
+    var selectedTintColorToken: any ColorToken = ColorTokenClear()
     var selectedBackgroundColorToken: any ColorToken = ColorTokenClear()
 }
 
@@ -22,7 +22,7 @@ struct TabAccessibilityColors: Equatable {
 extension TabAccessibilityColors {
 
     static func == (lhs: TabAccessibilityColors, rhs: TabAccessibilityColors) -> Bool {
-        return lhs.selectedTintcolorToken.equals(rhs.selectedTintcolorToken) &&
+        return lhs.selectedTintColorToken.equals(rhs.selectedTintColorToken) &&
         lhs.selectedBackgroundColorToken.equals(rhs.selectedBackgroundColorToken)
     }
 }

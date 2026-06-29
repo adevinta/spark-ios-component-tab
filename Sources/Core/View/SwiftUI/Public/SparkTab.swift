@@ -430,7 +430,7 @@ private extension View {
     @ViewBuilder
     func accessibilityItemButtonColors(isSelected: Bool, colors: TabAccessibilityColors) -> some View {
         if isSelected {
-            self.tint(colors.selectedTintcolorToken)
+            self.tint(colors.selectedTintColorToken)
                 .background(colors.selectedBackgroundColorToken)
         } else {
             self.tint(.primary)

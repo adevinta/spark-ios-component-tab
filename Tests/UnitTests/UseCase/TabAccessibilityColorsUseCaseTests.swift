@@ -34,7 +34,7 @@ struct TabAccessibilityColorsUseCaseTests {
         let colors = sut.execute(theme: self.theme, intent: .main)
 
         // THEN
-        #expect(colors.selectedTintcolorToken.equals(self.theme.colors.main.onMain))
+        #expect(colors.selectedTintColorToken.equals(self.theme.colors.main.onMain))
         #expect(colors.selectedBackgroundColorToken.equals(self.theme.colors.main.main))
     }
 
@@ -44,7 +44,7 @@ struct TabAccessibilityColorsUseCaseTests {
         let colors = sut.execute(theme: self.theme, intent: .support)
 
         // THEN
-        #expect(colors.selectedTintcolorToken.equals(self.theme.colors.support.onSupport))
+        #expect(colors.selectedTintColorToken.equals(self.theme.colors.support.onSupport))
         #expect(colors.selectedBackgroundColorToken.equals(self.theme.colors.support.support))
     }
 }
