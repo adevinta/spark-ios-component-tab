@@ -23,23 +23,23 @@ struct TabAccessibilityColorsTests {
         let colors = TabAccessibilityColors()
 
         // THEN
-        #expect(colors.selectedTintcolorToken.equals(ColorTokenClear()))
+        #expect(colors.selectedTintColorToken.equals(ColorTokenClear()))
         #expect(colors.selectedBackgroundColorToken.equals(ColorTokenClear()))
     }
 
     @Test("Equality when same colors")
     func equalityWhenSameColors() {
         // GIVEN / WHEN
-        let selectedTintcolorToken = ColorTokenGeneratedMock.random()
+        let selectedTintColorToken = ColorTokenGeneratedMock.random()
         let selectedBackgroundColorToken = ColorTokenGeneratedMock.random()
 
         let colors1 = TabAccessibilityColors(
-            selectedTintcolorToken: selectedTintcolorToken,
+            selectedTintColorToken: selectedTintColorToken,
             selectedBackgroundColorToken: selectedBackgroundColorToken
         )
 
         let colors2 = TabAccessibilityColors(
-            selectedTintcolorToken: selectedTintcolorToken,
+            selectedTintColorToken: selectedTintColorToken,
             selectedBackgroundColorToken: selectedBackgroundColorToken
         )
 
@@ -50,17 +50,17 @@ struct TabAccessibilityColorsTests {
     @Test("Inequality when different selected tint color token")
     func inequalityWhenDifferentSelectedTintColorToken() {
         // GIVEN / WHEN
-        let selectedTintcolorToken1 = ColorTokenGeneratedMock.random()
-        let selectedTintcolorToken2 = ColorTokenGeneratedMock.random()
+        let selectedTintColorToken1 = ColorTokenGeneratedMock.random()
+        let selectedTintColorToken2 = ColorTokenGeneratedMock.random()
         let selectedBackgroundColorToken = ColorTokenGeneratedMock.random()
 
         let colors1 = TabAccessibilityColors(
-            selectedTintcolorToken: selectedTintcolorToken1,
+            selectedTintColorToken: selectedTintColorToken1,
             selectedBackgroundColorToken: selectedBackgroundColorToken
         )
 
         let colors2 = TabAccessibilityColors(
-            selectedTintcolorToken: selectedTintcolorToken2,
+            selectedTintColorToken: selectedTintColorToken2,
             selectedBackgroundColorToken: selectedBackgroundColorToken
         )
 
@@ -71,17 +71,17 @@ struct TabAccessibilityColorsTests {
     @Test("Inequality when different selected background color token")
     func inequalityWhenDifferentSelectedBackgroundColorToken() {
         // GIVEN / WHEN
-        let selectedTintcolorToken = ColorTokenGeneratedMock.random()
+        let selectedTintColorToken = ColorTokenGeneratedMock.random()
         let selectedBackgroundColorToken1 = ColorTokenGeneratedMock.random()
         let selectedBackgroundColorToken2 = ColorTokenGeneratedMock.random()
 
         let colors1 = TabAccessibilityColors(
-            selectedTintcolorToken: selectedTintcolorToken,
+            selectedTintColorToken: selectedTintColorToken,
             selectedBackgroundColorToken: selectedBackgroundColorToken1
         )
 
         let colors2 = TabAccessibilityColors(
-            selectedTintcolorToken: selectedTintcolorToken,
+            selectedTintColorToken: selectedTintColorToken,
             selectedBackgroundColorToken: selectedBackgroundColorToken2
         )
 

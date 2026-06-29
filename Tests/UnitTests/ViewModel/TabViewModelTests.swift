@@ -371,7 +371,7 @@ private final class Stub {
         selectedColorToken: ColorTokenGeneratedMock.red()
     )
     let expectedAccessibilityColors = TabAccessibilityColors(
-        selectedTintcolorToken: ColorTokenGeneratedMock.green(),
+        selectedTintColorToken: ColorTokenGeneratedMock.green(),
         selectedBackgroundColorToken: ColorTokenGeneratedMock.purple()
     )
     let expectedSizes = TabSizes(iconHeight: 16.0)

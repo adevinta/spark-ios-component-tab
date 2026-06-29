@@ -24,7 +24,6 @@ struct SparkTabItemRenderer<Label, ExtraLabel>: View where Label: View, ExtraLab
     @Environment(\.tabSizes) private var sizes
     @Environment(\.tabItemIsSelected) private var isSelected
     @Environment(\.tabItemIsPressed) private var isPressed
-    @Environment(\.dynamicTypeSize) private var dynamicTypeSize
 
     @StateObject private var viewModel = TabSegmentViewModel()
 
