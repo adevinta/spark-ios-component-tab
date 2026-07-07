@@ -309,7 +309,9 @@ public struct SparkTab<SelectionValue, Content>: View where SelectionValue: Hash
         isSelected: Bool
     ) -> some View {
         Button {
-            if !self.showAccessibilityList, let tagValue = tag.base as? SelectionValue {
+            if !self.showAccessibilityList,
+               let tagValue = tag.base as? SelectionValue,
+               self.selection != tagValue {
                 self.selection = tagValue
             }
         } label: {
@@ -361,7 +363,8 @@ public struct SparkTab<SelectionValue, Content>: View where SelectionValue: Hash
                         let isSelected = self.selection == tag.base as? SelectionValue
 
                         Button {
-                            if let tagValue = tag.base as? SelectionValue {
+                            if let tagValue = tag.base as? SelectionValue,
+                               self.selection != tagValue {
                                 self.selection = tagValue
                             }
                             self.showAccessibilityList = false
